@@ -8,6 +8,10 @@ def userview(request):
     data=user_details.objects.all()
     return render(request,'userview.html',{'userdata':data})
 
+def userdelete(request, id):
+    data = user_details.objects.get(pk=id)
+    data.delete()
+    return redirect(userview)
 
 
 def userupdate(request,id):

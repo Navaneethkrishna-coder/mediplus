@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+.venv/
+
+# Environment secrets
+.env
+
+# Database
+*.sqlite3
+
+# Django static files
+staticfiles/
+
+# IDE
+.vscode/
+
+# OS
+.DS_Store
+
+# Security scan reports
+zap-report.html
